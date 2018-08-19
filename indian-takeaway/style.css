@@ -1,0 +1,20 @@
+/* external imports  */
+@import "./node_modules/normalize.css/normalize.css";
+
+/* fonts  */
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,300i,400");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+}

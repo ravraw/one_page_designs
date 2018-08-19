@@ -10,7 +10,7 @@ objective :
 
 > About food:
 > indian food mix of north-east-west-south
-> Mealoptions veg / non-veg
+> Meal options veg / non-veg
 > Typical meal -- rice / chappati /daal / sabji / pickle/salad / dessert/beverage.
 >indian thali 
 > Biryani  veg non-veg ... chicken - mutton - beef -- fish prawn with ryata / pickle/salad. 
@@ -18,5 +18,8 @@ objective :
 
 
  
+
+
+ <a href="https://www.tripadvisor.com/LocationPhotoDirectLink-g189400-d6833928-i182370345-Indian_Chef-Athens_Attica.html#182370345"><img alt="" src="https://media-cdn.tripadvisor.com/media/photo-s/0a/de/c0/29/indian-chef.jpg"/></a><br/>This photo of Indian Chef is courtesy of TripAdvisor
 
 
