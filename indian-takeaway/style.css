@@ -22,21 +22,70 @@ html {
   text-rendering: optimizeLegibility;
 }
 
+body {
+  width: 1440px;
+  margin: 0 auto;
+}
+
 /* ------------------------------------------------------- */
 /* REUSABLE COMPONENTS */
 /* ------------------------------------------------------- */
 
+section {
+  padding: 80px 0;
+}
+
 /* ---HEADINGS---- */
 
-h1 {
-  margin-top: 0;
-  margin-bottom: 15px;
-  color: #fff;
-  font-size: 475%;
+h1,
+h2,
+h3 {
   font-weight: 300;
   text-transform: capitalize;
   letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 475%;
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #fff;
   word-spacing: 2px;
+}
+h2 {
+  font-size: 300%;
+  margin-bottom: 30px;
+  word-spacing: 0.5px;
+}
+
+h3 {
+  font-size: 140%;
+  margin: 15px 0px;
+  word-spacing: 0.5px;
+}
+
+h2:after {
+  display: block;
+  height: 2px;
+  background-color: #ecac43;
+  content: " ";
+  width: 100px;
+  margin: 30px auto;
+  margin-bottom: 30px;
+}
+
+/* ---PARAGRAPH---- */
+.long-copy {
+  line-height: 145%;
+  width: 70%;
+  margin-left: 15%;
+  font-size: 130%;
+  margin-bottom: 60px;
+}
+
+.feature-card p {
+  line-height: 145%;
+  font-size: 105%;
 }
 
 /* ---BUTTONS---- */
@@ -83,6 +132,17 @@ h1 {
   color: #fff;
 }
 
+/* ---ICONS---- */
+
+.icon-big {
+  width: 50px;
+  height: 50px;
+}
+.icon-small {
+  width: 25px;
+  height: 25px;
+}
+
 /* ------------------------------------------------------- */
 /* HEADER */
 /* ------------------------------------------------------- */
@@ -106,15 +166,17 @@ header {
 }
 
 .main-nav {
-  width: 100%;
   height: 100px;
   display: flex;
   justify-content: space-between;
+  width: 90vw;
+  margin: 0 auto;
+  padding: 15px 0;
 }
 
-.logo {
+/* .logo {
   margin: 15px;
-}
+} */
 
 .nav-list {
   height: 100%;
@@ -139,4 +201,35 @@ header {
 .nav-link:hover,
 .nav-link:active {
   border-bottom: 2px solid #ecac43;
+}
+
+/* ------------------------------------------------------- */
+/* SECTION - FEATURE */
+/* ------------------------------------------------------- */
+
+.section-feature {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.section-feature-intro {
+  text-align: center;
+}
+.section-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+.feature-card {
+  padding: 0 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  text-align: justify;
+}
+
+.feature-card svg {
+  fill: #ecac43;
 }
