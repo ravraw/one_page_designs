@@ -4,6 +4,9 @@
 /* fonts  */
 @import url("https://fonts.googleapis.com/css?family=Lato:100,300,300i,400");
 
+/* ------------------------------------------------------- */
+/* BASIC SETUP */
+/* ------------------------------------------------------- */
 *,
 *::after,
 *::before {
@@ -15,6 +18,100 @@
 html {
   font-family: "Lato", sans-serif;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 1rem;
   text-rendering: optimizeLegibility;
+}
+
+/* ------------------------------------------------------- */
+/* REUSABLE COMPONENTS */
+/* ------------------------------------------------------- */
+
+/* ---HEADINGS---- */
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #fff;
+  font-size: 475%;
+  font-weight: 300;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+}
+
+/* ---BUTTONS---- */
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  text-transform: capitalize;
+  border-radius: 200px;
+  transition: all 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+  background-color: #ecac43;
+  border: 1px solid #ecac43;
+  color: white;
+  margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+  border: 1px solid #ecac43;
+  color: #fff;
+}
+
+.btn:hover,
+.btn:active {
+  background: #e59717;
+}
+
+.btn-full:hover,
+.btn-full:active {
+  background-color: #e59717;
+  border: 1px solid #fff;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+/* ------------------------------------------------------- */
+/* HEADER */
+/* ------------------------------------------------------- */
+
+header {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(./assets/images/p.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero-text-box {
+  /* border: 1px solid red; */
+  top: 30%;
+  left: 15%;
+  position: absolute;
+  color: white;
+}
+
+.main-nav {
+  border: 1px solid red;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  margin: 10px;
 }
