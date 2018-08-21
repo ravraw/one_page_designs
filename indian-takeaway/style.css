@@ -23,14 +23,14 @@ html {
 }
 
 body {
-  width: 1440px;
+  /* width: 1440px; */
   margin: 0 auto;
 }
 
 /* ------------------------------------------------------- */
 /* REUSABLE COMPONENTS */
 /* ------------------------------------------------------- */
-
+/* ---PARAGRAPH---- */
 section {
   padding: 80px 0;
 }
@@ -159,18 +159,18 @@ header {
 
 .hero-text-box {
   /* border: 1px solid red; */
+  position: absolute;
   top: 30%;
   left: 15%;
-  position: absolute;
   color: white;
 }
 
 .main-nav {
   height: 100px;
+  width: 90%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  width: 90vw;
-  margin: 0 auto;
   padding: 15px 0;
 }
 
@@ -206,19 +206,18 @@ header {
 /* ------------------------------------------------------- */
 /* SECTION - FEATURE */
 /* ------------------------------------------------------- */
-
 .section-feature {
-  width: 90vw;
+  width: 90%;
   margin: 0 auto;
 }
-
 .section-feature-intro {
   text-align: center;
 }
 .section-feature-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 20px;
+  grid-auto-rows: 250px;
 }
 
 .feature-card {
@@ -232,4 +231,30 @@ header {
 
 .feature-card svg {
   fill: #ecac43;
+}
+
+/* ------------------------------------------------------- */
+/* SECTION - SPECIALS */
+/* ------------------------------------------------------- */
+
+.section-specials {
+  /* border: 1px solid red; */
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 350px));
+  grid-auto-rows: 250px;
+  grid-gap: 15px;
+  justify-content: center;
+  background-color: #eee;
+}
+
+.section-specials figure {
+  background: #000;
+}
+
+.section-specials img {
+  /* border: 1px solid red; */
+  width: 350px;
+  height: 300px;
+  opacity: 0.6;
 }
