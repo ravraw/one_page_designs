@@ -245,16 +245,48 @@ header {
   grid-auto-rows: 250px;
   grid-gap: 15px;
   justify-content: center;
-  background-color: #eee;
+  background: #eee;
 }
-
+/* 
 .section-specials figure {
   background: #000;
-}
+} */
 
 .section-specials img {
   /* border: 1px solid red; */
   width: 350px;
   height: 300px;
-  opacity: 0.6;
+}
+
+/* ------------------------------------------------------- */
+/* SECTION - HOW */
+/* ------------------------------------------------------- */
+
+.how-grid {
+  border: 1px solid red;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 1 auto;
+}
+
+.step {
+  border: 3px solid #ecac43;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.step span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 130%;
+  color: #555;
+}
+.feature-card p {
+  padding: 15px 0;
 }
